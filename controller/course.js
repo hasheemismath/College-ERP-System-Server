@@ -78,6 +78,7 @@ exports.getCourse = (req,res)=>{
     return res.json(req.course)
 }
 
+//update the course
 exports.updateCourse = (req,res)=>{
     Course.findByIdAndUpdate(
         {_id: req.course._id},
