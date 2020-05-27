@@ -70,6 +70,7 @@ exports.signin = async (req,res)=>{
     return res.send({token,user:{_id,name,email,role,isAdmin}})
 }
 
+//logging out the user
 exports.loggout = (req,res)=>{
     res.clearCookie("token");
     res.json({
