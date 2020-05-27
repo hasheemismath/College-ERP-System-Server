@@ -130,9 +130,9 @@ exports.enrollModule = async (req,res)=>{
 
 }
 
-
+//get all the modules of the student
 exports.getAllModules = (req,res)=>{
-    // res.send(req.student.module)
+
     Module.find({'_id': {$in: req.student[0].module}},
         async function (err,module) {
             if(err){
