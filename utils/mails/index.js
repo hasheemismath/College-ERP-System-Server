@@ -1,25 +1,4 @@
 const mailer = require('nodemailer');
-// require('dotenv').config();
-
-
-// const getEmailData = (to,from,subject,text) =>{
-//     let data = null;
-//
-//     switch(template){
-//         case "welcome":
-//             data = {
-//                 from: "Waves <waves.guitars.rev@gmail.com>",
-//                 to,
-//                 subject: `Welcome to waves ${name}`,
-//                 html: welcome()
-//             }
-//         break;
-//         default:
-//             data;
-//     }
-//     return data;
-// }
-
 
 const sendEmail = (to) => {
 
